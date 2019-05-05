@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kenken Solver</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <div id="dimensions">
+            <h4>Dimensions?</h4>
+            <input id="dim-input" type="number" min="1" max="20">
+            <button id="create">Create Board</button>
+            <p id="input-error" class="invis">Invalid. Please enter a number.</p>
+        </div>
+        <center>
+            <div id="board-div">
+                <!-- board inserted here -->
+            </div>
+        </center>
+        <center>
+            <div id="controls" class="invis">
+                <input id="number" type="number" min="1">
+                <input id="operation-add" type="radio" name="Operation" value="+">+</input>
+                <input id="operation-subtract" type="radio" name="Operation" value="-">-</input>
+                <input id="operation-multiply" type="radio" name="Operation" value="x">x</input>
+                <input id="operation-divide" type="radio" name="Operation" value="/">/</input>
+                <input id="operation-none" type="radio" name="Operation" value="/">None</input>
+                <button id="add-box">Add Box</button>
+                <button id="solve">Solve</button>
+                <button id="hint">Hint</button>
+                <button id="other" class="invis">See Other Solutions</button>
+                <p id="add-box-error" class="invis error">Error: Not a Valid Box</p>
+                <p id="box-num-error" class="invis error">Error: Must Enter a Number for the Box</p>
+                <p id="box-op-error" class="invis error">Error: Must Enter an Operation for the Box</p>
+                <p id="box-op-inval-error" class="invis error">Error: Invalid Operation for this Box</p>
+                <p id="solve-start-error" class="invis error">Error: Must Fill All Boxes Before Solving</p>
+                <p id="cannot-solve-error" class="invis error">Error: This Board is Unsolvable</p>
+            </div>
+        </center>
+	</body>
+	<script src="main.js"></script>
+</html>

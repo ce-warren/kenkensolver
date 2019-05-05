@@ -1,0 +1,60 @@
+* {
+    font-family: optima;
+}
+
+.invis {
+    display: none;
+}
+
+#board {
+    border-collapse: collapse;
+}
+
+.row {
+    border-collapse: collapse;
+}
+
+.square {
+    border: 1px solid #222222;
+    border-collapse: collapse;
+}
+
+.selected {
+    background-color: lightblue;
+}
+
+.square-top-border {
+    border-top: 3px solid black;
+}
+
+.square-bottom-border {
+    border-bottom: 3px solid black;
+}
+
+.square-left-border {
+    border-left: 3px solid black;
+}
+
+.square-right-border {
+    border-right: 3px solid black;
+}
+
+.box-label {
+    text-align: left;
+}
+
+.box-number {
+    text-align: center;
+}
+
+.error {
+    color: #cc2e31;
+}
+
+.covered {
+    background-color: lightcoral;
+}
+
+.covered > p {
+    display: none;
+}
